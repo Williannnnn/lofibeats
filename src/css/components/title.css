@@ -1,0 +1,24 @@
+.title, .title--border {
+    display: inline-block;
+
+    min-width: max-content;
+    width: 80%;
+    margin: 1em auto;
+    padding: .5em;
+
+    color: black;
+    text-align: center;
+
+    cursor: default;
+}
+
+.title--border {
+    border: 2px solid black;
+}
+
+@media (min-width: 768px) {
+    .title, .title--border {
+        width: 50%;
+        margin: 1em 25%;
+    }
+}

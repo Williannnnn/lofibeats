@@ -1,0 +1,15 @@
+.list {
+    list-style: none;
+}
+
+.list__item {
+    display: flex;
+    align-items: center;
+    
+    margin: .1em;
+    padding: .1em;
+}
+
+.list__item * {
+    padding: .1em;
+}

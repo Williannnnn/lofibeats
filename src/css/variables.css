@@ -1,0 +1,9 @@
+:root {
+    --black: hsl(0, 0%, 20%);
+    --white: hsl(0, 0%, 90%);
+    --gray: rgb(100, 100, 100);
+
+    --radius-circle: 50%;
+    --radius-basic: 1em;
+    --radius-pill: 100vmax;
+}

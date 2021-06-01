@@ -1,0 +1,76 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+
+    width: 100%;
+    height: 5em;
+    padding: 1em 0;
+
+    z-index: 1;
+
+    background: linear-gradient(to bottom, hsl(0, 0%, 0%, 0.8), hsl(0, 0%, 0%, 0));
+}
+
+.header__logo, .header__contacts {
+    width: 20%;
+    height: 100%;
+    padding: 0 1em;
+}
+
+.header__logo > a > img {
+    width: 10ch;
+    height: 80%;
+    margin: auto;
+    padding: 0 0.2em;
+}
+
+.header__nav, .header__contacts {
+    display: none;
+    height: 100%;
+}
+
+.header__nav {
+    width: 60%;
+}
+
+.header__menu,
+.header__contacts ul {
+    display: flex;
+    justify-content: center;
+}
+
+.header__contacts ul {
+    justify-content: right;
+}
+
+.header__menu li, .header__contacts li {
+    width: max-content;
+    margin: 0 .5em;
+
+    transition: all 300ms ease;
+}
+
+.header__contacts :is(li, a, img) {
+    width: 24px;
+}
+
+.header__contacts li:hover {
+    transform: scale(1.1);
+}
+
+.header__menu a, .header__contacts a {
+    display: block;
+
+    color: aliceblue;
+    text-shadow: 0 0 .5em black;
+}
+
+@media (min-width: 769px) {
+    .header__nav,
+    .header__contacts {
+        display: block;
+    }   
+}
