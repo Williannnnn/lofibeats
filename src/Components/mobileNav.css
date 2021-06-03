@@ -39,4 +39,20 @@
 
 .mobile-navigation__menu a {
     color: white;
+    
+    margin-right: 1ch;
+
+    cursor: pointer;
 }
+
+.mobile-navigation__menu :is(a, img) {
+    filter: drop-shadow(var(--shadow-red));
+
+    transition: 300ms all ease;
+}
+
+.mobile-navigation__menu li:hover :is(a, img) {
+    text-shadow: var(--shadow-purple);
+    filter: drop-shadow(var(--shadow-purple));
+}
+

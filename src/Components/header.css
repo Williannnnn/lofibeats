@@ -6,7 +6,6 @@
     position: fixed;
 
     width: 100%;
-    height: 5em;
     padding: 1em 0;
 
     z-index: 1;
@@ -20,11 +19,17 @@
     padding: 0 1em;
 }
 
-.header__logo > a > img {
+.header__logo img {
     width: 10ch;
     height: 80%;
     margin: auto;
     padding: 0 0.2em;
+
+    transition: 300ms all ease;
+}
+
+.header__logo img:hover, .header__contacts li:hover {
+    filter: drop-shadow(var(--shadow-red));
 }
 
 .header__nav, .header__contacts {
@@ -57,8 +62,8 @@
     width: 24px;
 }
 
-.header__contacts li:hover {
-    transform: scale(1.1);
+.header__contacts img {
+    filter: hue-rotate(200deg);
 }
 
 .header__menu a, .header__contacts a {
