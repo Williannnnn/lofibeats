@@ -1,13 +1,23 @@
 :root {
     --black: hsl(0, 0%, 20%);
+    --black-t: hsl(0, 0%, 20%, 0.7);
+
     --white: hsl(0, 0%, 90%);
-    --gray: rgb(100, 100, 100);
-    --purple: hsl(290, 100%, 30%);
+    --white-t: hsla(0, 0%, 90%);
+
+    --gray: hsl(0, 0%, 39%);
+    --gray-t: hsla(0, 0%, 39%);
+
+    --purple: hsla(290, 100%, 30%);
+    --purple-t: hsla(290, 100%, 30%);
+
+    --green: hsl(120, 83%, 47%);
 
     --radius-circle: 50%;
     --radius-basic: 1em;
     --radius-pill: 100vmax;
 
     --shadow-red: 0 0 .2em crimson;
-    --shadow-purple: 0 0 1em var(--purple);
+    --shadow-purple: 0 0 .2em var(--purple);
+    --shadow-green: 0 0 .2em var(--green);
 }
