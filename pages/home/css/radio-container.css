@@ -1,3 +1,5 @@
+
+
 .radio__container {
     display: flex;
     flex-wrap: wrap;
@@ -45,19 +47,146 @@
 }
 
 .music-player {
+    padding: 1ch;
     background-color: var(--black);
+}
+
+.music-player > section {
+    display: flex;
+
+    width: 100%;
+    height: 50%;
+}
+
+.music-player__controller {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 1em;
+}
+
+.music-player__controller div {
+    width: 24px;
+    height: 100%;
+}
+
+.music-player__controller button {
+    width: 100%;
+    height: 100%;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.music-player__controller img {
+    width: 100%;
+    height: 100%;
+
+    transition: 100ms all ease;
+}
+
+.music-player__controller img:hover {
+    filter: drop-shadow(var(--shadow-purple));
+}
+
+.music-player__controller img:active {
+    filter: drop-shadow(var(--shadow-red));
+}
+
+.music-player__song-progress, .music-player__song-settings {
+    display: flex;
+    justify-content: space-around;
+}
+
+.music-player__timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    padding: 0 1em;
+}
+
+.music-player__song-progress {
+    display: flex;
+    justify-content: space-around;
+
+    width: 60%;
+    margin-right: 1em;
+}
+
+.music-player__initial-time, .music-player__song-duration {
+    width: max-content;
+    height: max-content;
+    margin: auto .5em;
+}
+
+.music-player__progress-bar {
+    width: 90%;
+    height: 20px;
+}
+
+.music-player__progress-bar input {
+    width: 100%;
+}
+
+.music-player__song-settings {
+    display: flex;
+    justify-content: space-around;
+
+    width: 40%;
+}
+
+.music-player__volume {
+    display: flex;
+    align-items: center;
+
+    width: 10%;
+    min-width: min-content;git status
+}
+
+.music-player__volume img:hover {
+    filter: drop-shadow(var(--shadow-purple));
+}
+
+.music-player__volume img:active {
+    filter: drop-shadow(var(--shadow-red));
+}
+
+.music-player__volume-bar {
+    display: flex;
+    justify-content: space-around;
+
+    width: 90%;
+}
+
+.music-player__volume-bar input {
+    width: 100%;
+}
+
+@media (min-width: 500px) {
+    .music-player__controller {
+        padding: 0 3em;
+    }
 }
 
 @media (min-width: 768px) {
     .radio__container {
         flex-wrap: nowrap;
 
-        width: 720px;
+        width: 768px;
         margin: 6em auto 0;
     }
 
     .music-social-medias {
         width: 30%;
         margin-left: auto;
+    }
+
+    .music-social-medias ul {
+        padding: 2ch;
     }
 }

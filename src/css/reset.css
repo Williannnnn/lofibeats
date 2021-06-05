@@ -1,10 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    
     box-sizing: border-box;
     outline: none;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    
+    color: white;
     font-size: 16px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -18,4 +21,25 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+input {
+    background: none;
+}
+
+input[type="range"]::-moz-range-progress {
+    height: 5px;
+
+    border-radius: var(--radius-pill);
+
+    background-color: white;
+    box-shadow: var(--shadow-purple);
+
+    z-index: -1;
+}
+
+input[type="range"]::-moz-range-track {  
+    background-color: gray;
+
+    border-radius: var(--radius-pill);
 }

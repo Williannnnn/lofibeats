@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="/pages/home/css/style.css">
     <link rel="stylesheet" href="/pages/home/css/youtube-lofi-live.css">
     <link rel="stylesheet" href="/pages/home/css/radio-container.css">
+
+    <script src="/pages/home/js/music-player.js" defer></script>
 </head>
 
 <body>
@@ -98,7 +100,9 @@
 
     <main class="radio">
         <section class="youtube-lofi-live">
-            <iframe src="https://www.youtube.com/embed/5qap5aO4i9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-white encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/5qap5aO4i9A" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-white encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </section>
 
         <div class="radio__container">
@@ -114,7 +118,70 @@
             </section>
 
             <section class="music-player">
-
+                <section class="music-player__controller">
+                    <div>
+                        <button>
+                            <img src="/src/assets/icons/google/player/skip_previous_white_24dp.svg" alt="Skip Previous">
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                            <img src="/src/assets/icons/google/player/fast_rewind_white_24dp.svg" alt="Fast Rewind">
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                            <img src="/src/assets/icons/google/player/stop_white_24dp.svg" alt="Stop">
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                            <img src="/src/assets/icons/google/player/play_arrow_white_24dp.svg" alt="Play">
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                            <img src="/src/assets/icons/google/player/fast_forward_white_24dp.svg" alt="Fast Forward">
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                            <img src="/src/assets/icons/google/player/skip_next_white_24dp.svg" alt="Skip Next">
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                            <img src="/src/assets/icons/google/player/shuffle_white_24dp.svg" alt="Shuffle">
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                            <img src="/src/assets/icons/google/player/replay_white_24dp.svg" alt="Replay">
+                        </button>
+                    </div>
+                </section>
+                <section class="music-player__timer">
+                    <section class="music-player__song-progress">
+                        <div class="music-player__initial-time">
+                            00:00
+                        </div>
+                        <div class="music-player__progress-bar">
+                            <input type="range" min="0" max="100" value="0">
+                        </div>
+                        <div class="music-player__song-duration">
+                            03:10
+                        </div>
+                    </section>
+                    
+                    <section class="music-player__song-settings">
+                        <div class="music-player__volume">
+                            <img src="/src/assets/icons/google/player/volume_up_white_24dp.svg" alt="Volume Indicator">
+                        </div>
+                        <div class="music-player__volume-bar">
+                            <input type="range" min="0" max="100" value="70" data-volume-value="">
+                        </div>
+                    </section>
+                </section>
             </section>
         </div>
     </main>
