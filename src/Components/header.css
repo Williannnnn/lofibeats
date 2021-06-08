@@ -77,6 +77,10 @@
     text-shadow: 0 0 .5em black;
 }
 
+.header__menu a:hover {
+    text-shadow: var(--shadow-purple);
+}
+
 @media (min-width: 769px) {
     .header__nav,
     .header__contacts {
