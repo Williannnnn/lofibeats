@@ -20,13 +20,16 @@
     <script src="/src/Components/hamburger.js" defer></script>
 
     <link rel="stylesheet" href="/src/Components/mobileNav.css">
-    <link rel="stylesheet" href="/src/Components/footer.css">
 
     <link rel="stylesheet" href="/pages/home/css/style.css">
     <link rel="stylesheet" href="/pages/home/css/youtube-lofi-live.css">
     <link rel="stylesheet" href="/pages/home/css/radio-container.css">
+    <link rel="stylesheet" href="/pages/home/css/song-recomendations.css">
 
+    <script src="/src/js/jsHelper.js" defer></script>
+    
     <script src="/pages/home/js/music-player.js" defer></script>
+    <script src="/pages/home/js/song-recommendation.js" defer></script>
 </head>
 
 <body>
@@ -184,6 +187,12 @@
                 </section>
             </section>
         </div>
+
+        <section class="song-recommendation">
+            <h1 class="song-recommendation__title"> Song Recommendation </h1>
+
+            <ul class="song-recommendation__list"></ul>
+        </section>
     </main>
 </body>
 

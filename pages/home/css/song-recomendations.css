@@ -1,0 +1,97 @@
+.song-recommendation {
+    width: 100vw;
+    max-width: 768px;
+    padding: 1ch;
+    margin: 0 auto 2em;
+
+    background: var(--black-t);
+}
+
+.song-recommendation__title {
+    display: inline-block;
+
+    width: 100%;
+    padding: 1ch;
+
+    text-align: center;
+    font-weight: normal;
+    font-size: larger;
+    font-style: italic;
+
+    text-shadow: var(--shadow-purple);
+
+    transition: 300ms all ease;
+}
+
+.song-recommendation__title:hover {
+    text-shadow: var(--shadow-red);
+}
+
+.song-recommendation__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.song-recommendation__list li {
+    display: flex;
+
+    width: 100%;
+    margin: 1ch 0;
+    padding: 1ch;
+
+    background-color: var(--black-t);
+
+    border: 2px solid var(--dark-black);
+
+    cursor: pointer;
+
+    transition: 200ms all ease;
+}
+
+.song-recommendation__list li:hover {
+    box-shadow: 0 0 1em hsla(290, 100%, 30%, 0.5);
+}
+
+.song-recommendation__list li:active {
+    box-shadow: 0 0 1em hsla(348, 83%, 47%, 0.5);
+}
+
+.song-recommendation__thumb {
+    width: 55px;
+    height: 55px;
+    margin-right: 1em;
+
+    background-color: var(--black-t);
+
+    border: 2px solid var(--dark-black);
+}
+
+.song-recommendation__thumb img {
+    width: 55px;
+    height: 55px;
+}
+
+.song-recommendation__song-info {
+    width: calc(100% - 40px);
+}
+
+.song-recommendation__song-name {
+    width: calc(100vw - 6em);
+    max-width: calc(768px - 6em);
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    transition: 300ms all ease;
+}
+
+.song-recommendation__list li:hover .song-recommendation__song-name {
+    text-shadow: var(--shadow-purple);
+}
+
+.song-recommendation__list li:active .song-recommendation__song-name {
+    text-shadow: var(--shadow-red);
+}

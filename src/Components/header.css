@@ -10,7 +10,7 @@
 
     z-index: 1;
 
-    background: linear-gradient(to bottom, hsl(0, 0%, 0%, 0.8), hsl(0, 0%, 0%, 0));
+    background: linear-gradient(to bottom, hsl(0, 0%, 0%, 0.9), hsl(0, 0%, 0%, 0) 100%);
 }
 
 .header__logo, .header__contacts {
@@ -30,6 +30,10 @@
 
 .header__logo img:hover, .header__contacts li:hover {
     filter: drop-shadow(var(--shadow-red));
+}
+
+.header__contacts li:first-child:hover {
+    filter: drop-shadow(var(--shadow-blue));
 }
 
 .header__nav, .header__contacts {
