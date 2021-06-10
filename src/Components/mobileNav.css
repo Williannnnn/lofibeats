@@ -1,6 +1,6 @@
 .mobile-navigation {
-    position: absolute;
-    top: 0em;
+    position: fixed;
+    top: 5em;
     right: -100%;
 
     width: 100vw;
@@ -8,9 +8,9 @@
 
     background: linear-gradient(to left, hsl(0, 0%, 0%, 0.8), hsl(0, 0%, 0%, 0) 90%);
 
+    z-index: 1;
+    
     transition: all 300ms ease;
-
-    z-index: -1;
 }
 
 .mobile-navigation__nav {
