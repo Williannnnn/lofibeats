@@ -42,14 +42,16 @@
     width: 60%;
 }
 
-.header__menu,
-.header__contacts ul {
+.header__menu{
     display: flex;
     justify-content: center;
 }
 
 .header__contacts ul {
-    justify-content: right;
+    display: flex;
+
+    width: min-content;
+    margin-left: auto;
 }
 
 .header__menu li, .header__contacts li {

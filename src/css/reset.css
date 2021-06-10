@@ -57,24 +57,3 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-input {
-    background: none;
-}
-
-input[type="range"]::-moz-range-progress {
-    height: 5px;
-
-    border-radius: var(--radius-pill);
-
-    background-color: white;
-    box-shadow: var(--shadow-purple);
-
-    z-index: -1;
-}
-
-input[type="range"]::-moz-range-track {  
-    background-color: gray;
-
-    border-radius: var(--radius-pill);
-}

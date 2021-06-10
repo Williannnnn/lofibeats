@@ -1,0 +1,36 @@
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    margin: 2em 0;
+}
+
+.about-us__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 768px;
+    padding: 1em;
+
+    background-color: var(--black-t);
+}
+
+.about-us h1 {
+    width: 100%;
+    margin-bottom: .5em;
+
+    font-size: x-large;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: var(--shadow-purple);
+}
+
+.about-us__container p {
+    padding: .5em 0;
+
+    line-height: 1.5em;
+}

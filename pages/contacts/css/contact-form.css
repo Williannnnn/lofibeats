@@ -48,6 +48,12 @@
     background-color: var(--black-t);
 
     border: 2px solid var(--purple-t);
+
+    transition: all 300ms ease;
+}
+
+.contact-form__form input:focus, .contact-form__form textarea:focus {
+    border-color: var(--red-t);
 }
 
 .contact-form__form textarea {

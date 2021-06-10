@@ -75,6 +75,7 @@
 
 .song-recommendation__song-info {
     width: calc(100% - 40px);
+    max-height: 55px;
 }
 
 .song-recommendation__song-name {

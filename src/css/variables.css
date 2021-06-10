@@ -18,11 +18,14 @@
     --blue: hsl(228, 83%, 47%);
     --blue-t: hsla(228, 83%, 47%, 0.7);
 
+    --red: hsl(348, 83%, 47%);
+    --red-t: hsla(348, 83%, 47%, 0.7);
+
     --radius-circle: 50%;
     --radius-basic: 1em;
     --radius-pill: 100vmax;
 
-    --shadow-red: 0 0 .2em crimson;
+    --shadow-red: 0 0 .2em var(--red);
     --shadow-purple: 0 0 .2em var(--purple);
     --shadow-green: 0 0 .2em var(--green);
     --shadow-blue: 0 0 .2em var(--blue)
