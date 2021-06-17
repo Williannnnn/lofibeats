@@ -8,20 +8,34 @@ const createElement = (elementName = 'div', attributes = {}, content = '') => {
     return element
 }
 
-const getRandomNumber = (from = 0, to = 1) => {
-    return Math.floor(Math.random() * (to - from + 1)) + from
-}
+const getRandomNumber = (from = 0, to = 1) => 
+  Math.floor(Math.random() * (to - from + 1)) + from
 
 function shuffle(array) {
-    let currentIndex = array.length,  randomIndex
-  
-    while (0 !== currentIndex) {
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
+    let currentIndex = array.length,
+        randomIndex
 
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
+    while (1 !== currentIndex) {
+        randomIndex = getRandomNumber(0, currentIndex - 1)
+        currentIndex--
+
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex],
+            array[currentIndex],
+        ]
     }
-  
-    return array;
-  }
+
+    return array
+}
+
+const getRandomSongDuration = () => {
+    const songMinutesValue = getRandomNumber(1, 5)
+    const songSecondsValue = getRandomNumber(0, 59)
+
+    const songMinutes = songMinutesValue < 10 ? `0${songMinutesValue}` : songMinutesValue
+    const songSeconds = songSecondsValue < 10 ? `0${songSecondsValue}` : songSecondsValue
+
+    const songDuration = `${songMinutes}:${songSeconds}`
+
+    return songDuration
+}

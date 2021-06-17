@@ -1,4 +1,4 @@
-.about-us {
+.playlists {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -7,7 +7,7 @@
     margin: 2em 0;
 }
 
-.about-us__container {
+.playlists__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,8 +19,19 @@
     background-color: var(--black-t);
 }
 
-.about-us__container p {
-    padding: .5em 0;
+.playlists__container > div {
+    width: 100%;
+}
 
-    line-height: 1.5em;
+.playlists__search-bar {
+    display: flex;
+
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto 1em;
+}
+
+.playlists__search-bar button {
+    width: 6em;
+    border-left: none;
 }

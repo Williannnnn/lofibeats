@@ -122,6 +122,9 @@
 }
 
 .music-player__progress-bar {
+    display: flex;
+    align-items: center;
+    
     width: 90%;
     height: 20px;
 }

@@ -2,6 +2,7 @@
     --black: hsl(0, 0%, 20%);
     --black-t: hsl(0, 0%, 20%, 0.7);
     --dark-black: hsl(0, 0%, 15%);
+    --dark-black-t: hsla(0, 0%, 15%, 0.5);
 
     --white: hsl(0, 0%, 90%);
     --white-t: hsla(0, 0%, 90%, 0.7);

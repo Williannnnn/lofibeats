@@ -23,7 +23,12 @@
 
     <link rel="stylesheet" href="/src/Components/footer.css">
 
+    <link rel="stylesheet" href="/pages/playlists/css/playlist-search-bar.css">
     <link rel="stylesheet" href="/pages/playlists/css/playlists.css">
+
+    <script src="/src/js/jsHelper.js" defer></script>
+    
+    <script src="/pages/playlists/js/playlists.js" defer></script>
 </head>
 
 <body>
@@ -96,7 +101,18 @@
     </header>
 
     <main class="playlists">
-
+        <section class="playlists__container">
+            <h1> Playlists </h1>
+            
+            <div>
+                <section class="playlists__search-bar">
+                    <input type="text" placeholder="Pesquisar Playlist">
+                    <button> Pesquisar </button>
+                </section>
+                
+                <ul class="playlists__list"></ul>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
