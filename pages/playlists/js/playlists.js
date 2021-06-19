@@ -35,7 +35,7 @@ const createPlaylistItem = (
         class: 'playlists__playlist-item',
     })
 
-    const playlistBasics = createElement('section', {
+    const playlistBasics = createElement('header', {
         class: 'playlists__playlist-basics',
     })
 
@@ -122,9 +122,14 @@ renderPlaylists()
 
 const playlists = document.querySelectorAll('.playlists__playlist-item')
 
+const isClassified = (element, classes = []) =>
+    [...element.classList].some(elementClass => classes.some(className => elementClass === className))
+
 playlists.forEach(playlist => {
-    playlist.addEventListener('click', event => {
-        event.preventDefault()
-        playlist.classList.toggle('opened-playlist')
+    playlist.addEventListener('click', ({target}) => {
+        const playlistClosingClasses = ['playlists__thumb', 'playlists__playlist-info']
+
+        if (isClassified(target, playlistClosingClasses) || isClassified(target.parentElement, playlistClosingClasses))
+            playlist.classList.toggle('opened-playlist')
     })
 })
