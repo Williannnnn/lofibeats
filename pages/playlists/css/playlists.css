@@ -14,7 +14,7 @@
     flex-flow: row wrap;
 
     width: 100%;
-    height: 6em;
+    max-height: 6em;
     padding: 1em;
 
     background-color: var(--black-t);
@@ -23,11 +23,11 @@
 
     overflow-y: hidden;
 
-    transition: all 3s ease;
+    transition: all 1s ease;
 }
 
 .opened-playlist {
-    height: max-content;
+    max-height: 31em;
 }
 
 .playlists__playlist-basics {
