@@ -99,7 +99,12 @@ const createSongItem = (songName = 'Unknown', songDuration = '00:00') => {
     return songItem
 }
 
-const renderPlaylists = () => {
+const createdPlaylists = []
+
+const renderPlaylists = (playlists = []) =>
+    playlists.forEach(playlist => playlistsList.appendChild(playlist))
+
+const buildPlaylists = () => {
     for (let playlistId = 0; playlistId < 10; playlistId++) {
         const [playlistName, artistName] = shuffle(songsInfo)[0].split(',')
         const playlistSongs = []
@@ -114,11 +119,12 @@ const renderPlaylists = () => {
     
         const playlist = createPlaylistItem(playlistName, artistName, playlistSongs)
     
-        playlistsList.appendChild(playlist)
+        createdPlaylists.push(playlist)
     }
 }
 
-renderPlaylists()
+buildPlaylists()
+renderPlaylists(createdPlaylists)
 
 const playlists = document.querySelectorAll('.playlists__playlist-item')
 

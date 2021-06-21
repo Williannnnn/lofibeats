@@ -30,8 +30,3 @@
     max-width: 680px;
     margin: 0 auto 1em;
 }
-
-.playlists__search-bar button {
-    width: 6em;
-    border-left: none;
-}
