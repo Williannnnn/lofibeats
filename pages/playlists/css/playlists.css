@@ -89,3 +89,17 @@
 
     cursor: pointer;
 }
+
+.playlist-not-found-warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 1em;
+    padding: 2em;
+
+    background-color: var(--dark-black-t);
+
+    text-shadow: var(--shadow-red);
+}
