@@ -66,15 +66,38 @@ const createRecommendedSongItem = (
         { class: 'song-recommendation__song-duration' },
         songDuration
     )
+
+    const contentMediasContainer = createElement('div', {
+        class: 'content-medias-container'
+    })
+
+    const contentMediasContainerSpotifyDiv = createElement()
+    const contentMediasContainerYouTubeDiv = createElement()
+
+    const spotifyImage = createElement('img', {
+        src: '/src/assets/icons/logo-spotify.svg'
+    })
+
+    const youTubeImage = createElement('img', {
+        src: '/src/assets/icons/youtube.svg'
+    })
+
     
     songItem.appendChild(thumbContainer)
     songItem.appendChild(songInfoContainer)
+    songItem.appendChild(contentMediasContainer)
 
     thumbContainer.appendChild(thumbImage)
 
     songInfoContainer.appendChild(songNameP)
     songInfoContainer.appendChild(artistNameP)
     songInfoContainer.appendChild(songDurationP)
+
+    contentMediasContainer.appendChild(contentMediasContainerSpotifyDiv)
+    contentMediasContainer.appendChild(contentMediasContainerYouTubeDiv)
+
+    contentMediasContainerSpotifyDiv.appendChild(spotifyImage)
+    contentMediasContainerYouTubeDiv.appendChild(youTubeImage)
 
     return songItem
 }

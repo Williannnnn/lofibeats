@@ -42,21 +42,22 @@
 }
 
 .song-recommendation__list li:hover {
-    box-shadow: 0 0 1em hsla(290, 100%, 30%, 0.5);
+    box-shadow: 0 0 1em hsla(290, 100%, 30%, 0.4);
 }
 
 .song-recommendation__list li:active {
-    box-shadow: 0 0 1em hsla(348, 83%, 47%, 0.5);
+    box-shadow: 0 0 1em hsla(348, 83%, 47%, 0.3);
 }
 
 .song-recommendation__thumb {
     width: 55px;
     height: 55px;
-    margin-right: 1em;
 
     background-color: var(--black-t);
 
     border: 2px solid var(--dark-black);
+
+    overflow: hidden;
 }
 
 .song-recommendation__thumb img {
@@ -65,8 +66,9 @@
 }
 
 .song-recommendation__song-info {
-    width: calc(100% - 40px);
+    width: calc(70% - 40px);
     max-height: 55px;
+    padding-left: 1em;
 }
 
 .song-recommendation__song-name {
@@ -86,4 +88,38 @@
 
 .song-recommendation__list li:active .song-recommendation__song-name {
     text-shadow: var(--shadow-red);
+}
+
+.content-medias-container {
+    display: none;
+    width: 30%;
+    max-width: 130px;
+    height: 100%;
+    margin-left: auto;
+}
+
+.content-medias-container div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 50%;
+}
+
+.content-medias-container img {
+    width: 30px;
+}
+
+.content-medias-container div:first-child img:hover {
+    filter: drop-shadow(var(--shadow-green));
+}
+
+.content-medias-container div:last-child img:hover {
+    filter: drop-shadow(var(--shadow-red));
+}
+
+@media (min-width: 400px) {
+    .content-medias-container {
+        display: flex;
+    }
 }

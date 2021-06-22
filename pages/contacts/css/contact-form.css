@@ -49,11 +49,7 @@
         width: calc(50% - .5em);
     }
 
-    .contact-form__form input:nth-child(2), .contact-form__form input:nth-child(4){
-        margin-right: .5em;
-    }
-
-    .contact-form__form input:nth-child(3), .contact-form__form input:nth-child(5) {
-        margin-left: .5em;
+    .contact-form__form {
+        gap: 1em;
     }
 }

@@ -59,6 +59,21 @@ const createPlaylistItem = (
 
     const artistNameP = createElement('p', {}, artistName)
 
+    const contentMediasContainer = createElement('div', {
+        class: 'content-medias-container'
+    })
+
+    const contentMediasContainerSpotifyDiv = createElement()
+    const contentMediasContainerYouTubeDiv = createElement()
+
+    const spotifyImage = createElement('img', {
+        src: '/src/assets/icons/logo-spotify.svg'
+    })
+
+    const youTubeImage = createElement('img', {
+        src: '/src/assets/icons/youtube.svg'
+    })
+
     const playlistSongsSection = createElement('section', {
         class: 'playlists__songs',
     })
@@ -72,11 +87,18 @@ const createPlaylistItem = (
 
     playlistBasics.appendChild(playlistThumb)
     playlistBasics.appendChild(playlistInfo)
+    playlistBasics.appendChild(contentMediasContainer)
 
     playlistThumb.appendChild(playlistThumbImage)
 
     playlistInfo.appendChild(playlistNameP)
     playlistInfo.appendChild(artistNameP)
+
+    contentMediasContainer.appendChild(contentMediasContainerSpotifyDiv)
+    contentMediasContainer.appendChild(contentMediasContainerYouTubeDiv)
+
+    contentMediasContainerSpotifyDiv.appendChild(spotifyImage)
+    contentMediasContainerYouTubeDiv.appendChild(youTubeImage)
 
     playlistSongsSection.appendChild(playlistSongsList)
 
